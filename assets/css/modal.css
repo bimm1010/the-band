@@ -1,0 +1,134 @@
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    animation: modalIn ease 0.5s;
+}
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* thêm class bằng js thì lại ko space ???  */
+#modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background: white;
+    border-radius: 5px;
+    width: 800px;
+    max-width: calc(100% - 32px);
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07) ;
+
+}
+
+.header {
+    position: relative;
+    top: 0;
+    padding: 60px;
+    text-align: center;
+    background: #009688;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn-close .ti-close {
+    font-size: 14px;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.btn-close:hover  {
+    background: red;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-radius: 5px;
+}
+
+.send-to,
+.input-modal {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.send-to {
+    margin-top: 30px;
+}
+
+.send-to > label,
+.input-modal > label {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.send-to > input,
+.input-modal > input {
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+
+.btn-pay > button {
+    width: 780px;
+    max-width: calc(100% - 20px);
+    margin-left: 10px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #009688;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-pay:hover > button {
+    background: gray;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-modal {
+    float: right;
+}
+.footer-modal > p {
+    padding: 0 10px 10px 0;
+}
+
+.footer-modal > p > a {
+    color: cornflowerblue;
+}

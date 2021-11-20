@@ -1,0 +1,82 @@
+@media (max-width: 438px) {
+    #header .navigation-list {
+        flex-direction: column;
+    }
+    
+    #header {
+        overflow: hidden;
+    }
+
+    #header .btn-search {
+        display: none;
+    }
+
+    #header .navigation-list {
+        width: 100%;
+    }
+
+    #header .navigation-list .btn-home {
+        width: 77px;
+    }
+
+    .navigation-list-item .sub-nav {
+        position: initial;
+        width: 100%;
+    }
+
+    .navigation-list-item .sub-nav .sub-nav-item > a{
+        background: #000;
+        color: white;
+        padding-left:  39px; ;
+    }
+}
+
+/* reponsive for tablet and pc */
+
+@media (min-width: 439px) {
+    #header .mobile-menu {
+        display: none ;
+    }
+}
+
+
+@media (max-width: 680px) {
+    .image-member-list {
+        flex-direction: column;
+    }
+
+    .image-member-list .image-member > img{
+        max-width: 400px;
+        max-height: 300px;
+        border-radius: 5px;
+    }
+
+    .image-member {
+        margin: 30px 0;
+    }
+
+    #contact .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-input .info-intput-contact > form > input {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 777px) {
+    .buy-sticket-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buy-sticket-list .buy-sticket-list-item{
+        width: 330px;
+    }
+
+    .buy-sticket-list .buy-sticket-list-item > img {
+        max-width: 330px;
+    }
+}
+
